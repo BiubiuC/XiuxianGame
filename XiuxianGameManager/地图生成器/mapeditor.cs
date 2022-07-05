@@ -131,7 +131,8 @@ namespace XiuxianGameManager
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            //相对路径获取 exe打开路径
+            //string str = System. Windows .Forms.Application.StartupPath;
             button2_Click(sender,e);
             DialogResult dr = this.openFileDialog1.ShowDialog();
             if(dr == DialogResult.OK)

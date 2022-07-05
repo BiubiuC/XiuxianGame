@@ -474,8 +474,8 @@ point:4,2
 [UNIT_END]
 [UNIT_BEGIN]
 maparea:测试2
-name:
-maxplayer:0
+name:道路
+maxplayer:5
 ziyuanjibie:0
 ziyuanfengfudu:0
 yeshengguaijibie:0
@@ -584,8 +584,8 @@ point:5,2
 [UNIT_END]
 [UNIT_BEGIN]
 maparea:测试2
-name:
-maxplayer:0
+name:道路
+maxplayer:5
 ziyuanjibie:0
 ziyuanfengfudu:0
 yeshengguaijibie:0
@@ -596,7 +596,7 @@ point:5,3
 [UNIT_BEGIN]
 maparea:测试2
 name:新手村
-maxplayer:1
+maxplayer:5
 ziyuanjibie:0
 ziyuanfengfudu:0
 yeshengguaijibie:0
@@ -694,8 +694,8 @@ point:6,2
 [UNIT_END]
 [UNIT_BEGIN]
 maparea:测试2
-name:
-maxplayer:0
+name:道路
+maxplayer:5
 ziyuanjibie:0
 ziyuanfengfudu:0
 yeshengguaijibie:0
@@ -706,7 +706,7 @@ point:6,3
 [UNIT_BEGIN]
 maparea:测试2
 name:树林
-maxplayer:0
+maxplayer:5
 ziyuanjibie:0
 ziyuanfengfudu:0
 yeshengguaijibie:0

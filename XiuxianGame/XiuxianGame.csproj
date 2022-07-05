@@ -12,8 +12,4 @@
     </Compile>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="运行时资源\" />
-  </ItemGroup>
-
 </Project>

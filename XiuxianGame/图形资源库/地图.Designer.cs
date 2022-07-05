@@ -233,6 +233,7 @@
             this.Controls.Add(this.上);
             this.Name = "地图";
             this.Size = new System.Drawing.Size(392, 195);
+            this.Load += new System.EventHandler(this.地图_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,4 +1,4 @@
-﻿namespace XiuxianGame.图形资源库.GroupBox
+﻿namespace XiuxianGame.图形资源库.信息显示栏
 {
     partial class 人物属性
     {
@@ -370,6 +370,8 @@
             this.Name = "人物属性";
             this.Size = new System.Drawing.Size(392, 380);
             this.Load += new System.EventHandler(this.人物属性_Load);
+            this.Click += new System.EventHandler(this.人物属性_Click);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.人物属性_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

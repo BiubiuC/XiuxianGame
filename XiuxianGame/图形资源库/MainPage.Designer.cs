@@ -69,7 +69,7 @@
             this.清理Panel内容ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.地图1 = new XiuxianGame.图形资源库.GroupBox.地图();
+            this.mapControl = new XiuxianGame.图形资源库.GroupBox.地图();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.infopanel.SuspendLayout();
@@ -346,6 +346,7 @@
             this.infopanel.Name = "infopanel";
             this.infopanel.Size = new System.Drawing.Size(392, 380);
             this.infopanel.TabIndex = 3;
+            this.infopanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.infopanel_ControlRemoved);
             // 
             // 当前地点信息1
             // 
@@ -400,21 +401,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "按钮操作栏";
             // 
-            // 地图1
+            // mapControl
             // 
-            this.地图1.BackColor = System.Drawing.Color.LightGray;
-            this.地图1.Location = new System.Drawing.Point(641, 426);
-            this.地图1.Name = "地图1";
-            this.地图1.Size = new System.Drawing.Size(392, 195);
-            this.地图1.TabIndex = 5;
+            this.mapControl.BackColor = System.Drawing.Color.LightGray;
+            this.mapControl.Location = new System.Drawing.Point(641, 426);
+            this.mapControl.Name = "mapControl";
+            this.mapControl.Size = new System.Drawing.Size(392, 195);
+            this.mapControl.TabIndex = 5;
             // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 735);
-            this.ContextMenuStrip = this.contextMenuStrip1;
-            this.Controls.Add(this.地图1);
+            this.Controls.Add(this.mapControl);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.infopanel);
             this.Controls.Add(this.panel1);
@@ -473,7 +473,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel infopanel;
-        private XiuxianGame.图形资源库.GroupBox.地图 map;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 清理Panel内容ToolStripMenuItem;
         private System.Windows.Forms.Label label4;
@@ -481,8 +480,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
 
-        private XiuxianGame.图形资源库.GroupBox.地图 a;
-        private 图形资源库.GroupBox.地图 地图1;
+        private 图形资源库.GroupBox.地图 mapControl;
         private 图形资源库.GroupBox.当前地点信息 当前地点信息1;
     }
 }
