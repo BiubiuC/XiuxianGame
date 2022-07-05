@@ -7,13 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="图形资源库\信息显示栏\当前地点信息.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="运行时资源\" />
+    <ProjectReference Include="..\XiuxianGame\XiuxianGame.csproj" />
   </ItemGroup>
 
 </Project>

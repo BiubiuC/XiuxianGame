@@ -63,6 +63,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.infopanel = new System.Windows.Forms.Panel();
+            this.当前地点信息1 = new XiuxianGame.图形资源库.GroupBox.当前地点信息();
             this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.清理Panel内容ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,6 +94,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1045, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // 人物属性ToolStripMenuItem
             // 
@@ -338,11 +340,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.infopanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.infopanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.infopanel.Controls.Add(this.当前地点信息1);
             this.infopanel.Controls.Add(this.label2);
             this.infopanel.Location = new System.Drawing.Point(641, 40);
             this.infopanel.Name = "infopanel";
             this.infopanel.Size = new System.Drawing.Size(392, 380);
             this.infopanel.TabIndex = 3;
+            // 
+            // 当前地点信息1
+            // 
+            this.当前地点信息1.AutoSize = true;
+            this.当前地点信息1.BackColor = System.Drawing.SystemColors.Info;
+            this.当前地点信息1.Location = new System.Drawing.Point(-1, -1);
+            this.当前地点信息1.Name = "当前地点信息1";
+            this.当前地点信息1.Size = new System.Drawing.Size(392, 380);
+            this.当前地点信息1.TabIndex = 1;
             // 
             // label2
             // 
@@ -471,5 +483,6 @@
 
         private XiuxianGame.图形资源库.GroupBox.地图 a;
         private 图形资源库.GroupBox.地图 地图1;
+        private 图形资源库.GroupBox.当前地点信息 当前地点信息1;
     }
 }

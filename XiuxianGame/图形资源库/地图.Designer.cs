@@ -55,6 +55,7 @@
             this.上.TabIndex = 0;
             this.上.Text = "后山";
             this.上.UseVisualStyleBackColor = true;
+            this.上.Click += new System.EventHandler(this.上_Click);
             // 
             // 下
             // 
@@ -64,6 +65,7 @@
             this.下.TabIndex = 1;
             this.下.Text = "前门";
             this.下.UseVisualStyleBackColor = true;
+            this.下.Click += new System.EventHandler(this.下_Click);
             // 
             // 左
             // 
@@ -73,6 +75,7 @@
             this.左.TabIndex = 2;
             this.左.Text = "丹房";
             this.左.UseVisualStyleBackColor = true;
+            this.左.Click += new System.EventHandler(this.左_Click);
             // 
             // 右
             // 
@@ -82,6 +85,7 @@
             this.右.TabIndex = 3;
             this.右.Text = "剑阁";
             this.右.UseVisualStyleBackColor = true;
+            this.右.Click += new System.EventHandler(this.右_Click);
             // 
             // 左上
             // 
@@ -91,6 +95,7 @@
             this.左上.TabIndex = 4;
             this.左上.Text = "灵兽山";
             this.左上.UseVisualStyleBackColor = true;
+            this.左上.Click += new System.EventHandler(this.左上_Click);
             // 
             // 右上
             // 
@@ -100,6 +105,7 @@
             this.右上.TabIndex = 5;
             this.右上.Text = "发展规划厅";
             this.右上.UseVisualStyleBackColor = true;
+            this.右上.Click += new System.EventHandler(this.右上_Click);
             // 
             // 左下
             // 
@@ -109,6 +115,7 @@
             this.左下.TabIndex = 6;
             this.左下.Text = "-";
             this.左下.UseVisualStyleBackColor = true;
+            this.左下.Click += new System.EventHandler(this.左下_Click);
             // 
             // 右下
             // 
@@ -118,6 +125,7 @@
             this.右下.TabIndex = 7;
             this.右下.Text = "树林";
             this.右下.UseVisualStyleBackColor = true;
+            this.右下.Click += new System.EventHandler(this.右下_Click);
             // 
             // 本地
             // 

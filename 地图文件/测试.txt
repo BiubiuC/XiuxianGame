@@ -1,0 +1,12 @@
+测试:1,1
+[UNIT_BEGIN]
+maparea:测试
+name:测试地图
+maxplayer:0
+ziyuanjibie:0
+ziyuanfengfudu:0
+yeshengguaijibie:0
+isSafe:False
+jinruquanxian:0
+point:0,0
+[UNIT_END]

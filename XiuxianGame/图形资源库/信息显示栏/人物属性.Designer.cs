@@ -56,6 +56,8 @@
             this.水v = new System.Windows.Forms.Label();
             this.火v = new System.Windows.Forms.Label();
             this.土v = new System.Windows.Forms.Label();
+            this.生命值 = new System.Windows.Forms.Label();
+            this.生命值v = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // 姓名
@@ -107,7 +109,7 @@
             // 攻击
             // 
             this.攻击.AutoSize = true;
-            this.攻击.Location = new System.Drawing.Point(3, 120);
+            this.攻击.Location = new System.Drawing.Point(3, 144);
             this.攻击.Name = "攻击";
             this.攻击.Size = new System.Drawing.Size(46, 24);
             this.攻击.TabIndex = 5;
@@ -116,7 +118,7 @@
             // 防御
             // 
             this.防御.AutoSize = true;
-            this.防御.Location = new System.Drawing.Point(3, 144);
+            this.防御.Location = new System.Drawing.Point(3, 168);
             this.防御.Name = "防御";
             this.防御.Size = new System.Drawing.Size(46, 24);
             this.防御.TabIndex = 6;
@@ -125,7 +127,7 @@
             // 暴击率
             // 
             this.暴击率.AutoSize = true;
-            this.暴击率.Location = new System.Drawing.Point(3, 168);
+            this.暴击率.Location = new System.Drawing.Point(3, 192);
             this.暴击率.Name = "暴击率";
             this.暴击率.Size = new System.Drawing.Size(64, 24);
             this.暴击率.TabIndex = 7;
@@ -134,7 +136,7 @@
             // 暴击伤害
             // 
             this.暴击伤害.AutoSize = true;
-            this.暴击伤害.Location = new System.Drawing.Point(3, 192);
+            this.暴击伤害.Location = new System.Drawing.Point(3, 216);
             this.暴击伤害.Name = "暴击伤害";
             this.暴击伤害.Size = new System.Drawing.Size(82, 24);
             this.暴击伤害.TabIndex = 8;
@@ -143,7 +145,7 @@
             // 金
             // 
             this.金.AutoSize = true;
-            this.金.Location = new System.Drawing.Point(3, 216);
+            this.金.Location = new System.Drawing.Point(208, 0);
             this.金.Name = "金";
             this.金.Size = new System.Drawing.Size(28, 24);
             this.金.TabIndex = 9;
@@ -152,7 +154,7 @@
             // 木
             // 
             this.木.AutoSize = true;
-            this.木.Location = new System.Drawing.Point(3, 240);
+            this.木.Location = new System.Drawing.Point(208, 24);
             this.木.Name = "木";
             this.木.Size = new System.Drawing.Size(28, 24);
             this.木.TabIndex = 10;
@@ -161,7 +163,7 @@
             // 水
             // 
             this.水.AutoSize = true;
-            this.水.Location = new System.Drawing.Point(3, 264);
+            this.水.Location = new System.Drawing.Point(208, 48);
             this.水.Name = "水";
             this.水.Size = new System.Drawing.Size(28, 24);
             this.水.TabIndex = 11;
@@ -170,7 +172,7 @@
             // 火
             // 
             this.火.AutoSize = true;
-            this.火.Location = new System.Drawing.Point(3, 288);
+            this.火.Location = new System.Drawing.Point(208, 72);
             this.火.Name = "火";
             this.火.Size = new System.Drawing.Size(28, 24);
             this.火.TabIndex = 12;
@@ -179,7 +181,7 @@
             // 土
             // 
             this.土.AutoSize = true;
-            this.土.Location = new System.Drawing.Point(3, 312);
+            this.土.Location = new System.Drawing.Point(208, 96);
             this.土.Name = "土";
             this.土.Size = new System.Drawing.Size(28, 24);
             this.土.TabIndex = 13;
@@ -233,7 +235,7 @@
             // 攻击v
             // 
             this.攻击v.AutoSize = true;
-            this.攻击v.Location = new System.Drawing.Point(110, 120);
+            this.攻击v.Location = new System.Drawing.Point(110, 144);
             this.攻击v.Name = "攻击v";
             this.攻击v.Size = new System.Drawing.Size(63, 24);
             this.攻击v.TabIndex = 19;
@@ -242,7 +244,7 @@
             // 防御v
             // 
             this.防御v.AutoSize = true;
-            this.防御v.Location = new System.Drawing.Point(110, 144);
+            this.防御v.Location = new System.Drawing.Point(110, 168);
             this.防御v.Name = "防御v";
             this.防御v.Size = new System.Drawing.Size(63, 24);
             this.防御v.TabIndex = 20;
@@ -251,7 +253,7 @@
             // 暴击率v
             // 
             this.暴击率v.AutoSize = true;
-            this.暴击率v.Location = new System.Drawing.Point(110, 168);
+            this.暴击率v.Location = new System.Drawing.Point(110, 192);
             this.暴击率v.Name = "暴击率v";
             this.暴击率v.Size = new System.Drawing.Size(63, 24);
             this.暴击率v.TabIndex = 21;
@@ -260,7 +262,7 @@
             // 暴击伤害v
             // 
             this.暴击伤害v.AutoSize = true;
-            this.暴击伤害v.Location = new System.Drawing.Point(110, 192);
+            this.暴击伤害v.Location = new System.Drawing.Point(110, 216);
             this.暴击伤害v.Name = "暴击伤害v";
             this.暴击伤害v.Size = new System.Drawing.Size(63, 24);
             this.暴击伤害v.TabIndex = 22;
@@ -269,7 +271,7 @@
             // 金v
             // 
             this.金v.AutoSize = true;
-            this.金v.Location = new System.Drawing.Point(110, 216);
+            this.金v.Location = new System.Drawing.Point(315, 0);
             this.金v.Name = "金v";
             this.金v.Size = new System.Drawing.Size(74, 24);
             this.金v.TabIndex = 23;
@@ -278,7 +280,7 @@
             // 木v
             // 
             this.木v.AutoSize = true;
-            this.木v.Location = new System.Drawing.Point(110, 240);
+            this.木v.Location = new System.Drawing.Point(315, 24);
             this.木v.Name = "木v";
             this.木v.Size = new System.Drawing.Size(74, 24);
             this.木v.TabIndex = 24;
@@ -287,7 +289,7 @@
             // 水v
             // 
             this.水v.AutoSize = true;
-            this.水v.Location = new System.Drawing.Point(110, 264);
+            this.水v.Location = new System.Drawing.Point(315, 48);
             this.水v.Name = "水v";
             this.水v.Size = new System.Drawing.Size(74, 24);
             this.水v.TabIndex = 25;
@@ -296,7 +298,7 @@
             // 火v
             // 
             this.火v.AutoSize = true;
-            this.火v.Location = new System.Drawing.Point(110, 288);
+            this.火v.Location = new System.Drawing.Point(315, 72);
             this.火v.Name = "火v";
             this.火v.Size = new System.Drawing.Size(74, 24);
             this.火v.TabIndex = 26;
@@ -305,11 +307,29 @@
             // 土v
             // 
             this.土v.AutoSize = true;
-            this.土v.Location = new System.Drawing.Point(110, 312);
+            this.土v.Location = new System.Drawing.Point(315, 96);
             this.土v.Name = "土v";
             this.土v.Size = new System.Drawing.Size(74, 24);
             this.土v.TabIndex = 27;
             this.土v.Text = "label14";
+            // 
+            // 生命值
+            // 
+            this.生命值.AutoSize = true;
+            this.生命值.Location = new System.Drawing.Point(3, 120);
+            this.生命值.Name = "生命值";
+            this.生命值.Size = new System.Drawing.Size(64, 24);
+            this.生命值.TabIndex = 28;
+            this.生命值.Text = "生命值";
+            // 
+            // 生命值v
+            // 
+            this.生命值v.AutoSize = true;
+            this.生命值v.Location = new System.Drawing.Point(110, 120);
+            this.生命值v.Name = "生命值v";
+            this.生命值v.Size = new System.Drawing.Size(63, 24);
+            this.生命值v.TabIndex = 29;
+            this.生命值v.Text = "label1";
             // 
             // 人物属性
             // 
@@ -317,6 +337,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Info;
+            this.Controls.Add(this.生命值v);
+            this.Controls.Add(this.生命值);
             this.Controls.Add(this.土v);
             this.Controls.Add(this.火v);
             this.Controls.Add(this.水v);
@@ -383,5 +405,7 @@
         private System.Windows.Forms.Label 水v;
         private System.Windows.Forms.Label 火v;
         private System.Windows.Forms.Label 土v;
+        private System.Windows.Forms.Label 生命值;
+        private System.Windows.Forms.Label 生命值v;
     }
 }

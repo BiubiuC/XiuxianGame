@@ -8,11 +8,21 @@ using System.Windows.Forms;
 
 namespace XiuxianGame.图形资源库.GroupBox
 {
-    public partial class 地图 : UserControl
+    public partial class 当前地点信息 : UserControl
     {
-        public 地图()
+        public 当前地点信息()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 人物属性_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
