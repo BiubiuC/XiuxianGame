@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XiuxianGame", "XiuxianGame\XiuxianGame.csproj", "{ED17707A-ADA1-4C08-9889-ACAF36AE220B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiuxianGameManager", "XiuxianGameManager\XiuxianGameManager.csproj", "{B90E1E5E-D340-4D8E-ADFC-C500A3E5B8B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XiuxianGameManager", "XiuxianGameManager\XiuxianGameManager.csproj", "{B90E1E5E-D340-4D8E-ADFC-C500A3E5B8B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

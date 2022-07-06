@@ -110,26 +110,27 @@
             // 人物属性ToolStripMenuItem1
             // 
             this.人物属性ToolStripMenuItem1.Name = "人物属性ToolStripMenuItem1";
-            this.人物属性ToolStripMenuItem1.Size = new System.Drawing.Size(146, 34);
+            this.人物属性ToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.人物属性ToolStripMenuItem1.Text = "属性";
             this.人物属性ToolStripMenuItem1.Click += new System.EventHandler(this.人物属性ToolStripMenuItem1_Click);
             // 
             // 修行ToolStripMenuItem
             // 
             this.修行ToolStripMenuItem.Name = "修行ToolStripMenuItem";
-            this.修行ToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
+            this.修行ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.修行ToolStripMenuItem.Text = "修行";
+            this.修行ToolStripMenuItem.Click += new System.EventHandler(this.修行ToolStripMenuItem_Click);
             // 
             // 功法ToolStripMenuItem
             // 
             this.功法ToolStripMenuItem.Name = "功法ToolStripMenuItem";
-            this.功法ToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
+            this.功法ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.功法ToolStripMenuItem.Text = "功法";
             // 
             // 技能ToolStripMenuItem
             // 
             this.技能ToolStripMenuItem.Name = "技能ToolStripMenuItem";
-            this.技能ToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
+            this.技能ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.技能ToolStripMenuItem.Text = "技能";
             // 
             // 物品ToolStripMenuItem
@@ -146,6 +147,7 @@
             this.包裹ToolStripMenuItem.Name = "包裹ToolStripMenuItem";
             this.包裹ToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
             this.包裹ToolStripMenuItem.Text = "包裹";
+            this.包裹ToolStripMenuItem.Click += new System.EventHandler(this.包裹ToolStripMenuItem_Click);
             // 
             // 仓库ToolStripMenuItem
             // 
@@ -423,6 +425,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainPage";
             this.Text = "曹杰锅休闲模拟器";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainPage_FormClosed);
             this.Load += new System.EventHandler(this.MainPage_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -1,48 +1,77 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using XiuxianGame.DBOper;
 
 namespace XiuxianGame.人物
 {
     public class Player
     {
         //基本属性
-        string name; //姓名
-        string sex; //性别
-        int age;    //年龄
-        int maxAge; //寿命
-        int meiLi;  //魅力
+        int id;
+        string name;
+        string sex;
+        int age;
+        int maxage;
+        int meili;
+        int djingjie;
+        int xjingjie;
+        int jingyan;
+        int hp;
+        int maxhp;
+        int mp;
+        int maxmp;
+        int tp;
+        int maxtp;
+        int actnum;
+        int defnum;
+        double baolinum;
+        double baojiact;
+        int jin;
+        int mu;
+        int shui;
+        int huo;
+        int tu;
 
-        //修行
-        int DJingJie;   //大境界
-        int XJingJie;   //小境界
 
-        //天赋  TODO
-        string[] tianfu;    //天赋
+        //背包
+        int beibaodaxiao;
+        int[] wupins;
 
-        //战斗属性
-        int hp; //生命
-        int maxhp;  //最大生命
-        int mp; //灵力
-        int maxmp;  //最大灵力
-        int nl; //念力
-        int maxln;  //最大念力
-        int gongJili;   //攻击力
-        int fangYuli;   //防御力
-        double baoJilv;  //暴击率
-        double baoJiShangHai;    //暴击伤害
+        //DB操作
+        static PlayerOper dbp = new PlayerOper();
 
-        //五行属性 TODO
-        int jin;    //金
-        int mu;     //木
-        int shui;   //水
-        int huo;    //火
-        int tu;     //土
+        public int Id { get => id; set => id = value; }
+        public string Name { get => name; set => name = value; }
+        public string Sex { get => sex; set => sex = value; }
+        public int Age { get => age; set => age = value; }
+        public int Maxage { get => maxage; set => maxage = value; }
+        public int Meili { get => meili; set => meili = value; }
+        public int Djingjie { get => djingjie; set => djingjie = value; }
+        public int Xjingjie { get => xjingjie; set => xjingjie = value; }
+        public int Hp { get => hp; set => hp = value; }
+        public int Maxhp { get => maxhp; set => maxhp = value; }
+        public int Mp { get => mp; set => mp = value; }
+        public int Maxmp { get => maxmp; set => maxmp = value; }
+        public int Tp { get => tp; set => tp = value; }
+        public int Maxtp { get => maxtp; set => maxtp = value; }
+        public int Actnum { get => actnum; set => actnum = value; }
+        public int Defnum { get => defnum; set => defnum = value; }
+        public double Baolinum { get => baolinum; set => baolinum = value; }
+        public double Baojiact { get => baojiact; set => baojiact = value; }
+        public int Jin { get => jin; set => jin = value; }
+        public int Mu { get => mu; set => mu = value; }
+        public int Shui { get => shui; set => shui = value; }
+        public int Huo { get => huo; set => huo = value; }
+        public int Tu { get => tu; set => tu = value; }
+        public int Jingyan { get => jingyan; set => jingyan = value; }
 
-        public Player load()
+        //测试用load
+        public static Player load()
         {
-            //TODO:
-            /* 先瞎几把弄点数据 begin */
+
+            /*//TODO:
+            *//* 先瞎几把弄点数据 begin *//*
             //基本属性
             name = "张三"; //姓名
             sex = "男"; //性别
@@ -75,32 +104,10 @@ namespace XiuxianGame.人物
             shui = 5;   //水
             huo = 5;    //火
             tu = 5;     //土
-            /* 先瞎几把弄点数据 end */
-            return this;
+            *//* 先瞎几把弄点数据 end */
+            return dbp.getPlayer(1);
         }
 
-        public string Name { get => name; set => name = value; }
-        public string Sex { get => sex; set => sex = value; }
-        public int Age { get => age; set => age = value; }
-        public int MaxAge { get => maxAge; set => maxAge = value; }
-        public int MeiLi { get => meiLi; set => meiLi = value; }
-        public int DJingJie1 { get => DJingJie; set => DJingJie = value; }
-        public int XJingJie1 { get => XJingJie; set => XJingJie = value; }
-        public string[] Tianfu { get => tianfu; set => tianfu = value; }
-        public int Hp { get => hp; set => hp = value; }
-        public int Maxhp { get => maxhp; set => maxhp = value; }
-        public int Mp { get => mp; set => mp = value; }
-        public int Maxmp { get => maxmp; set => maxmp = value; }
-        public int Nl { get => nl; set => nl = value; }
-        public int Maxln { get => maxln; set => maxln = value; }
-        public int GongJili { get => gongJili; set => gongJili = value; }
-        public int FangYuli { get => fangYuli; set => fangYuli = value; }
-        public double BaoJilv { get => baoJilv; set => baoJilv = value; }
-        public double BaoJiShangHai { get => baoJiShangHai; set => baoJiShangHai = value; }
-        public int Jin { get => jin; set => jin = value; }
-        public int Mu { get => mu; set => mu = value; }
-        public int Shui { get => shui; set => shui = value; }
-        public int Huo { get => huo; set => huo = value; }
-        public int Tu { get => tu; set => tu = value; }
+
     }
 }

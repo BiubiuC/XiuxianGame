@@ -46,6 +46,26 @@ namespace XiuxianGame.图形资源库.GroupBox
             this.左下.Text = (point.X - 1 < 0 || point.Y > map.GetLength(1)) ? "-" : map[point.X - 1, point.Y + 1].Name;
             this.下.Text = (point.Y > map.GetLength(1)) ? "-" : map[point.X, point.Y + 1].Name;
             this.右下.Text = (point.X > map.GetLength(0) || point.Y > map.GetLength(1)) ? "-" : map[point.X + 1, point.Y + 1].Name;
+
+            this.本地.Visible = true;
+            this.左上.Visible = true;
+            this.上.Visible = true;
+            this.右上.Visible = true;
+            this.左.Visible = true;
+            this.右.Visible = true;
+            this.左下.Visible = true;
+            this.下.Visible = true;
+            this.右下.Visible = true;
+
+            if (this.本地.Text == null || this.本地.Text.Equals("-") || this.本地.Text.Equals("")) { this.本地.Visible = false; }
+            if (this.左上.Text == null || this.左上.Text.Equals("-") || this.左上.Text.Equals("")) { this.左上.Visible = false; }
+            if (this.上.Text == null || this.上.Text.Equals("-") || this.上.Text.Equals("")) { this.上.Visible = false; }
+            if (this.右上.Text == null || this.右上.Text.Equals("-") || this.右上.Text.Equals("")) { this.右上.Visible = false; }
+            if (this.左.Text == null || this.左.Text.Equals("-") || this.左.Text.Equals("")) { this.左.Visible = false; }
+            if (this.右.Text == null || this.右.Text.Equals("-") || this.右.Text.Equals("")) { this.右.Visible = false; }
+            if (this.左下.Text == null || this.左下.Text.Equals("-") || this.左下.Text.Equals("")) { this.左下.Visible = false; }
+            if (this.下.Text == null || this.下.Text.Equals("-") || this.下.Text.Equals("")) { this.下.Visible = false; }
+            if (this.右下.Text == null || this.右下.Text.Equals("-") || this.右下.Text.Equals("")) { this.右下.Visible = false; }
         }
 
         private void calcPoint(int x,int y)
